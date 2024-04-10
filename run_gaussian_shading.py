@@ -109,7 +109,7 @@ def main(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Gaussian Shading')
-    parser.add_argument('--num', default=100, type=int)
+    parser.add_argument('--num', default=1000, type=int)
     parser.add_argument('--image_length', default=512, type=int)
     parser.add_argument('--guidance_scale', default=7.5, type=float)
     parser.add_argument('--num_inference_steps', default=50, type=int)
@@ -117,7 +117,7 @@ if __name__ == '__main__':
     parser.add_argument('--gen_seed', default=0, type=int)
     parser.add_argument('--channel_copy', default=1, type=int)
     parser.add_argument('--hw_copy', default=8, type=int)
-    parser.add_argument('--user_number', default=100000000, type=int)
+    parser.add_argument('--user_number', default=1000000, type=int)
     parser.add_argument('--fpr', default=0.000001, type=float)
     parser.add_argument('--output_path', default='./output/')
     parser.add_argument('--chacha', action='store_true', help='chacha20 for cipher')
