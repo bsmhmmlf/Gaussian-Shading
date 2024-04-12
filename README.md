@@ -1,5 +1,7 @@
 # Gaussian Shading: Provable Performance-Lossless Image Watermarking for Diffusion Models
 
+[![arXiv](https://img.shields.io/badge/arXiv-2404.04956-b31b1b.svg)](https://arxiv.org/abs/2404.04956)
+
 This repository hosts the official PyTorch implementation of the paper: ["**Gaussian Shading: Provable Performance-Lossless Image Watermarking for Diffusion Models**"](https://arxiv.org/abs/2404.04956) (Accepted by CVPR 2024).
 
 
