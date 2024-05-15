@@ -27,9 +27,9 @@ class Gaussian_Shading_chacha:
             fpr_onebit = betainc(i+1, self.marklength-i, 0.5)
             fpr_bits = betainc(i+1, self.marklength-i, 0.5) * user_number
             if fpr_onebit <= fpr and self.tau_onebit is None:
-                self.tau_onebit = (i+1) / self.marklength
+                self.tau_onebit = i / self.marklength
             if fpr_bits <= fpr and self.tau_bits is None:
-                self.tau_bits = (i+1) / self.marklength
+                self.tau_bits = i / self.marklength
 
     def stream_key_encrypt(self, sd):
         self.key = get_random_bytes(32)
@@ -113,9 +113,9 @@ class Gaussian_Shading:
             fpr_onebit = betainc(i+1, self.marklength-i, 0.5)
             fpr_bits = betainc(i+1, self.marklength-i, 0.5) * user_number
             if fpr_onebit <= fpr and self.tau_onebit is None:
-                self.tau_onebit = (i+1) / self.marklength
+                self.tau_onebit = i / self.marklength
             if fpr_bits <= fpr and self.tau_bits is None:
-                self.tau_bits = (i+1) / self.marklength
+                self.tau_bits = i / self.marklength
 
     def truncSampling(self, message):
         z = np.zeros(self.latentlength)

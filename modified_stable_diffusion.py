@@ -5,7 +5,7 @@ import numpy as np
 import PIL
 
 import torch
-from diffusers import StableDiffusionPipeline
+from diffusers import StableDiffusionPipeline, DDIMScheduler, UNet2DConditionModel
 from diffusers.utils import logging, BaseOutput
 from torchvision.transforms import ToPILImage
 
